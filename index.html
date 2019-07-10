@@ -7,24 +7,27 @@
   <meta name="theme-color" content="white"/>
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-<!-- CODELAB: Add iOS meta tags and icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Hello PWA">
-  <link rel="apple-touch-icon" href="images/hello-icon-152.png">
-	
 </head>
 <body class="fullscreen">
   <div class="container">
-    <h1 class="title">Hello World!</h1>
+      <center>
+        Username: <input type='text' name='user' />
+        <br />
+        Passowrd: <input type='password' name='passowrd' />
+        <br /><br />
+        <input type='button' value='Save' onclick="window.open('http://www.google.com')" />
+        
+        </center>
   </div>
+	
+	
  <!-- <script src="js/main.js"></script>-->
 	<script>
 		if ('serviceWorker' in navigator) {
     		navigator.serviceWorker
              .register('sw.js');
   		}
+		
     </script>
 </body>
 </html>
